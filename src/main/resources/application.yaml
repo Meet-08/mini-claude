@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: mini-claude
+  ai:
+    azure:
+      openai:
+        api-key: ${AZURE_OPENAI_API_KEY}
+        endpoint: ${AZURE_OPENAI_ENDPOINT}
+        chat:
+          options:
+            deployment-name: o4-mini
+            temperature: 1
+logging:
+  level:
+    org.springframework.ai: DEBUG
+    org.springaicommunity.agent: DEBUG
